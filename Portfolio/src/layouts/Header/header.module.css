@@ -1,0 +1,34 @@
+.color_font{
+    color: var(--main-fonts-color);
+    background: -webkit-linear-gradient(var(--main-fonts-color), var(--second-fonts-color));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    min-width: 350px;
+}
+.container_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    padding: 0;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 390px;
+    max-width: 600px;
+    text-align: center;
+}
+.fullname {
+
+}

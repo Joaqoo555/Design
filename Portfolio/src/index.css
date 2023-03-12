@@ -1,0 +1,29 @@
+@import url("./normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500&display=swap");
+* {
+  --main-bg-color: rgba(198, 10, 63, 0.678);
+  --main-fonts-color: rgba(198, 10, 63, 0.678);
+  --second-fonts-color: #c64c0a86;
+  --three-fonts-color: rgba(0, 0, 0, 0.779);
+  font-family: "Montserrat Alternates", sans-serif;
+  color: var(--three-fonts-color);
+}
+h1 {
+  font-weight: 500;
+  line-height: 0;
+}
+h2 {
+  font-weight: 400;
+  line-height: 24px;
+  margin: 10 0;
+}
+h3 {
+  font-weight: 300;
+}
+p {
+  font-weight: 200;
+  margin: 10px 0;
+}
+
+/*#c64c0a86*/
+/*rgba(198, 10, 63, 0.678)*/

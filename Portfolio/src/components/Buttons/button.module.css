@@ -1,0 +1,12 @@
+.style_button{
+    outline: none;
+    border: none;
+    background: linear-gradient(45deg, var(--main-bg-color) 0%, var(--second-fonts-color) 100%);
+    box-shadow: 0 4px 10px 0 #00000070;
+    border-radius: 4px;
+    padding: .2rem;
+    font-weight:300;
+    color: var(--three-fonts-color);
+    max-height: 1.8rem;
+    cursor: pointer;
+}
