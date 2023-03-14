@@ -1,12 +1,44 @@
-.style_button{
+/* .style_button{
     outline: none;
     border: none;
     background: linear-gradient(45deg, var(--main-bg-color) 0%, var(--second-fonts-color) 100%);
-    box-shadow: 0 4px 10px 0 #00000070;
     border-radius: 4px;
-    padding: .2rem;
+    padding: .5rem;
     font-weight:300;
     color: var(--three-fonts-color);
-    max-height: 1.8rem;
+    max-height: 3rem;
     cursor: pointer;
-}
+    text-align: center;
+} */
+
+.style_button {
+    padding: .5rem 1rem;
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+    color: var(--three-fonts-color);
+    border-radius: .5rem;
+    border-bottom: 2px solid var(--main-bg-color);
+    border-right: 2px solid var(--main-bg-color);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+       cursor: pointer;
+   }
+   
+   .style_button:hover {
+    border-top: 2px solid var(--main-bg-color);
+    border-left: 2px solid var(--main-bg-color);
+    border-bottom: 2px solid var(--main-bg_second-color);
+    border-right: 2px solid var(--main-bg_second-color);
+    box-shadow: var(--main-bg_second-color) 5px 5px, var(--main-bg_three-color) 10px 10px, var(--main-bg_four-color) 15px 15px;
+   }
+
+   /* --main-bg-color: rgba(198, 10, 63, 0.678);
+   --main-bg_second-color:rgba(198, 10, 63, 0.678);
+   --main-bg_three-color:rgba(198, 10, 63, 0.678);
+   --main-bg_four-color:rgba(198, 10, 63, 0.678); */
