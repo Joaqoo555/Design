@@ -1,12 +1,13 @@
 @import url("./normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500&display=swap");
 * {
+  --first-bg-color: #e4f0f7;
   --main-bg-color: rgba(198, 10, 63, 0.678);
   --main-bg_second-color:rgb(240, 46, 121, 0.4);
   --main-bg_three-color:rgba(221, 37, 98, 0.3);
   --main-bg_four-color:rgba(184, 17, 73, 0.2);
 
-
+  --heigth-content-sections: 900px;
   --main-fonts-color: rgba(198, 10, 63, 0.678);
   --second-fonts-color: #c64c0a86;
   --three-fonts-color: rgba(0, 0, 0, 0.779);
@@ -15,7 +16,7 @@
   
 }
 body {
-  background-color: #e4f0f7;
+  background-color: var(--first-bg-color);
 }
 h1 {
   font-weight: 500;
@@ -34,7 +35,9 @@ p {
   font-weight: 200;
   margin: 10px 0;
 }
-
+button {
+  background-color: var(--first-bg-color);
+}
 
 /*#c64c0a86*/
 /*rgba(198, 10, 63, 0.678)

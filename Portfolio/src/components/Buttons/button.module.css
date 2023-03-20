@@ -1,17 +1,9 @@
-/* .style_button{
-    outline: none;
-    border: none;
-    background: linear-gradient(45deg, var(--main-bg-color) 0%, var(--second-fonts-color) 100%);
-    border-radius: 4px;
-    padding: .5rem;
-    font-weight:300;
-    color: var(--three-fonts-color);
-    max-height: 3rem;
-    cursor: pointer;
-    text-align: center;
-} */
 
 .style_button {
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding: .5rem 1rem;
     font-weight: 400;
     background: rgb(255, 255, 255);
@@ -28,6 +20,7 @@
        border-right,
        box-shadow;
        cursor: pointer;
+       text-align: center;
    }
    
    .style_button:hover {
