@@ -7,10 +7,10 @@
   --main-bg_three-color:rgba(221, 37, 98, 0.3);
   --main-bg_four-color:rgba(184, 17, 73, 0.2);
 
-  --heigth-content-sections: 900px;
+  --heigth-content-sections: 980px;
   --main-fonts-color: rgba(198, 10, 63, 0.678);
   --second-fonts-color: #c64c0a86;
-  --three-fonts-color: rgba(0, 0, 0, 0.779);
+  --three-fonts-color: rgba(0, 0, 0, 0.744);
   font-family: "Montserrat Alternates", sans-serif;
   color: var(--three-fonts-color);
   
@@ -39,6 +39,23 @@ button {
   background-color: var(--first-bg-color);
 }
 
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  h3 {
+    
+  }
+  p {
+    font-size: 18px;
+    text-align: start;
+  }
+
+}
 /*#c64c0a86*/
 /*rgba(198, 10, 63, 0.678)
 #e4f0f7

@@ -13,31 +13,36 @@ const Header = () => {
         <h2>
           <span className={Styles.color_font}>JOAQUIN</span>
           <br />
-          CARRERA
+          <span className={Styles.surname}>CARRERA</span>
         </h2>
         <Button about="Trabaja conmigo" />
       </header>
       <main className={Styles.main}>
-        <picture className={Styles.container_img}>
+        <motion.picture
+          variants={fadeIn("down", 0.8)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className={Styles.container_img}
+        >
           <img src={joaquin} alt="Joaquin Carrera" />
-        </picture>
-        <article className={Styles.fullname}>
-          <motion.h1
-            variants={fadeIn("up", .2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.2 }}
-          >
-            JOAQUIN CARRERA
-          </motion.h1>
+        </motion.picture>
+        <motion.article
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className={Styles.fullname}
+        >
+          <h1>JOAQUIN CARRERA</h1>
           <div className={Styles.container_about}>
-            <h2>SOY UN</h2>
+
             <ul className={Styles.dinamic}>
-              <li>
+              <li className={Styles.full_stack}>
                 <span>FULL STACK DEVELOPER</span>
               </li>
-              <li>
-                <span>WEB DEVELOPER</span>
+              <li className={Styles.web_dev}>
+                <span >WEB DEVELOPER</span>
               </li>
               <li className={Styles.mern}>
                 <span>MERN DEVELOPER</span>
@@ -47,20 +52,32 @@ const Header = () => {
               </li>
             </ul>
           </div>
-        </article>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, illo
-          dicta ab facilis reiciendis ex nemo neque veritatis, mollitia
-          pariatur, asperiores officia! Magni repudiandae quod ducimus, sit
-          exercitationem nisi esse.
-        </p>
-        <div className={Styles.container_buttons}>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, illo
+            dicta ab facilis reiciendis ex nemo neque veritatis, mollitia
+            pariatur, asperiores officia! Magni repudiandae quod ducimus, sit
+            exercitationem nisi esse.
+          </p>
+    <div className={Styles.container_acounts}>
+    <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className={Styles.container_buttons}
+        >
           <Button
             about={"Contactame"}
             download={<CiImport className={Styles.download} />}
           ></Button>
-        </div>
-        <div className={Styles.container_icons}>
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className={Styles.container_icons}
+        >
           <a href="https://github.com/Joaqoo555" target="_blank">
             {" "}
             <BsGithub className={Styles.icons} />
@@ -71,7 +88,9 @@ const Header = () => {
           >
             <BsLinkedin className={Styles.icons} />
           </a>
-        </div>
+        </motion.div>
+    </div>
+        </motion.article>
       </main>
     </div>
   );

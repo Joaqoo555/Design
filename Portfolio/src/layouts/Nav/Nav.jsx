@@ -9,22 +9,22 @@ const Nav = () => {
   return (
     <section className={Styles.nav_container}>
       <article className={Styles.container_icons}>
-        <Link to="header" spy={true} smooth={true} >
+        <Link to="header" spy={true} smooth={true} activeClass={Styles.active}>
           <GrHomeRounded className={Styles.icons} />
         </Link>
       </article>
       <article className={Styles.container_icons}>
-        <Link to="about" spy={true} smooth={true} >
+        <Link to="about" spy={true} smooth={true} activeClass={Styles.active}>
           <BiUser className={Styles.icons} />
         </Link>
       </article>
       <article className={Styles.container_icons}>
-      <Link to="about" spy={true} smooth={true} >
+      <Link to="technologies" spy={true} smooth={true} activeClass={Styles.active}>
         <GrTechnology className={Styles.icons} />
         </Link>
       </article>
       <article className={Styles.container_icons}>
-        <Link to="about" spy={true} smooth={true} >
+        <Link to="contact" spy={true} smooth={true} activeClass={Styles.active}>
         <FaRegCommentDots className={Styles.icons} />
         </Link>
       </article>

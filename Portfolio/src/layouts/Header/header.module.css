@@ -10,8 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 600px;
-    min-width: 350px;
+    width: 80%;
+    min-width: 390px;
 }
 .container_header {
     display: flex;
@@ -55,6 +55,9 @@
 }
 .container_buttons {
     padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .type::after {
     content: '|';
@@ -80,13 +83,13 @@ img {
 }
 .container_about {
     display: flex;
-
+    justify-content: center;
 }
 .dinamic {
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 24px;
+    height: 22px;
     overflow: hidden;
 }
 .dinamic li{
@@ -119,7 +122,7 @@ img {
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 95%;
     left: 0;
     border-left: 2px solid #000000;
     animation: typing 2.5s steps(20) infinite;
@@ -129,7 +132,9 @@ img {
 .dinamic li span{
     position: relative;
 }
-
+.surname{
+    padding-left: 2em;
+}
 
 @keyframes typing {
     100% {
@@ -137,3 +142,80 @@ img {
         margin: 0 -22px 0 12px;
     }
 }
+
+@media (min-width: 1024px) {
+    .main {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 390px;
+        max-width: 1100px;
+        text-align: center;
+    }
+    .fullname {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-right: 12rem;
+    }
+    .container_img{
+        width: 300px;
+        height: 360px;
+        padding-bottom: 5rem;
+    }
+    .header {
+        padding: 0 1em;
+        padding-top: 1.6em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        width: 800px;
+        min-width: 350px;
+    }
+    .dinamic li span{
+
+        font-size: 28px;
+        
+    }    
+
+    .dinamic {
+        /*26px*/
+        height: 28px;
+    }
+    .full_stack{
+        line-height: 28px;
+    }
+
+    .mern{
+        margin: 0;
+        
+    }
+
+    .container_icons {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .container_acounts{
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .main p {
+        padding-top: 2rem;
+    }
+    .dinamic{
+        margin-left: 3em;
+      }
+    @keyframes slider {
+        100%{
+            top: -136px
+        }
+    }
+  }
+  
