@@ -37,8 +37,6 @@ const Header = () => {
                 type: "spring",
                 stiffness: 260,
                 damping: 20,
-
-
               }}
               className={Styles.letter_a}
             >
@@ -84,10 +82,12 @@ const Header = () => {
             </ul>
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, illo
-            dicta ab facilis reiciendis ex nemo neque veritatis, mollitia
-            pariatur, asperiores officia! Magni repudiandae quod ducimus, sit
-            exercitationem nisi esse.
+            Soy desarrollador Full stack (Orientado al backend), con experiencia
+            trabajando en Typescript, Javascript, React.JS, Express.JS, Node.JS,
+            Tailwind, SQL entre otras tecnologías para la industria E-commerce.
+            Busco crecer en el ámbito del desarrollo de software, aportando
+            liderazgo, trabajo en equipo, Proactividad y Resolución de
+            problemas.
           </p>
           <div className={Styles.container_acounts}>
             <motion.div

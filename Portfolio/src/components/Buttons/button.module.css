@@ -35,3 +35,12 @@
    --main-bg_second-color:rgba(198, 10, 63, 0.678);
    --main-bg_three-color:rgba(198, 10, 63, 0.678);
    --main-bg_four-color:rgba(198, 10, 63, 0.678); */
+
+
+   @media (min-width: 1130px) {
+    .style_button {
+        min-width: 240px;
+        height: 58px;
+    }
+  }
+  
