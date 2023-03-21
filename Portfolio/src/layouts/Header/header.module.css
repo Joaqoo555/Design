@@ -88,6 +88,7 @@ img {
 .container_about {
     display: flex;
     justify-content: center;
+
 }
 .dinamic {
     text-align: center;
@@ -138,6 +139,15 @@ img {
 }
 .surname{
     padding-left: 2em;
+}
+.fullname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fullname p{
+    width: 90%;
+    text-align: center;
 }
 
 @keyframes typing {

@@ -38,10 +38,14 @@
     cursor: pointer;
 }
 .active {
-    background-color: #402cdb;
-    width: 100px;
-    height: 100px;
+    background-color: var(--main-bg-color);
     border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
   }
 
   @media (min-width: 1024px) {
