@@ -11,9 +11,41 @@ const Header = () => {
     <div className={Styles.container_header} id="header">
       <header className={Styles.header}>
         <h2>
-          <span className={Styles.color_font}>JOAQUIN</span>
+          <span className={Styles.color_font}>
+            JO
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ rotate: 360, scale: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              }}
+              className={Styles.letter_a}
+            >
+              A
+            </motion.div>
+            QUIN
+          </span>
           <br />
-          <span className={Styles.surname}>CARRERA</span>
+          <span className={Styles.surname}>
+            CA
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ rotate: 360, scale: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+
+
+              }}
+              className={Styles.letter_a}
+            >
+              R
+            </motion.div>
+            RERA
+          </span>
         </h2>
         <Button about="Trabaja conmigo" />
       </header>
@@ -36,13 +68,12 @@ const Header = () => {
         >
           <h1>JOAQUIN CARRERA</h1>
           <div className={Styles.container_about}>
-
             <ul className={Styles.dinamic}>
               <li className={Styles.full_stack}>
                 <span>FULL STACK DEVELOPER</span>
               </li>
               <li className={Styles.web_dev}>
-                <span >WEB DEVELOPER</span>
+                <span>WEB DEVELOPER</span>
               </li>
               <li className={Styles.mern}>
                 <span>MERN DEVELOPER</span>
@@ -58,38 +89,38 @@ const Header = () => {
             pariatur, asperiores officia! Magni repudiandae quod ducimus, sit
             exercitationem nisi esse.
           </p>
-    <div className={Styles.container_acounts}>
-    <motion.div
-          variants={fadeIn("up", 0.6)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
-          className={Styles.container_buttons}
-        >
-          <Button
-            about={"Contactame"}
-            download={<CiImport className={Styles.download} />}
-          ></Button>
-        </motion.div>
-        <motion.div
-          variants={fadeIn("up", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
-          className={Styles.container_icons}
-        >
-          <a href="https://github.com/Joaqoo555" target="_blank">
-            {" "}
-            <BsGithub className={Styles.icons} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/joaquin-ezequiel-carrera/"
-            target="_blank"
-          >
-            <BsLinkedin className={Styles.icons} />
-          </a>
-        </motion.div>
-    </div>
+          <div className={Styles.container_acounts}>
+            <motion.div
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className={Styles.container_buttons}
+            >
+              <Button
+                about={"Contactame"}
+                download={<CiImport className={Styles.download} />}
+              ></Button>
+            </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className={Styles.container_icons}
+            >
+              <a href="https://github.com/Joaqoo555" target="_blank">
+                {" "}
+                <BsGithub className={Styles.icons} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/joaquin-ezequiel-carrera/"
+                target="_blank"
+              >
+                <BsLinkedin className={Styles.icons} />
+              </a>
+            </motion.div>
+          </div>
         </motion.article>
       </main>
     </div>

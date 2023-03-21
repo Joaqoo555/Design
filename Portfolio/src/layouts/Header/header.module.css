@@ -1,8 +1,12 @@
 .color_font{
     color: var(--main-fonts-color);
-    background: -webkit-linear-gradient(var(--main-fonts-color), var(--main-bg_three-color));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+}
+.letter_a{
+    display: inline-block;
+}
+.surname .letter_a {
+    color: var(--main-fonts-color);
 }
 .header {
     padding: 0 1em;
@@ -126,7 +130,7 @@ img {
     left: 0;
     border-left: 2px solid #000000;
     animation: typing 2.5s steps(20) infinite;
-    background-color: #e4f0f7;
+    background-color: var(--first-bg-color);
 }
 
 .dinamic li span{
@@ -166,7 +170,7 @@ img {
     }
     .header {
         padding: 0 1em;
-        padding-top: 1.6em;
+        padding-top: 2.4em;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -192,13 +196,19 @@ img {
         margin: 0;
         
     }
-
+    .icons{
+        height: 30px;
+        width: 30px;
+    }
+    .icons:hover{
+        scale: 1.1;
+    }
     .container_icons {
         width: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 2rem;
+        padding-bottom: 1.2rem;
     }
     .container_acounts{
         padding-top: 1rem;
@@ -208,6 +218,9 @@ img {
     }
     .main p {
         padding-top: 2rem;
+    }
+    .main {
+        padding-top: 12rem;
     }
     .dinamic{
         margin-left: 3em;

@@ -1,7 +1,7 @@
 @import url("./normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500&display=swap");
 * {
-  --first-bg-color: #e4f0f7;
+  --first-bg-color: #f0f8fb;
   --main-bg-color: rgba(198, 10, 63, 0.678);
   --main-bg_second-color:rgb(240, 46, 121, 0.4);
   --main-bg_three-color:rgba(221, 37, 98, 0.3);
@@ -48,7 +48,7 @@ button {
     line-height: 28px;
   }
   h3 {
-    
+
   }
   p {
     font-size: 18px;
