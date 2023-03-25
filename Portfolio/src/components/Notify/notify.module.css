@@ -1,0 +1,11 @@
+.icon_notify {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-left: 4%;
+}
+.container_icon_notify{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}

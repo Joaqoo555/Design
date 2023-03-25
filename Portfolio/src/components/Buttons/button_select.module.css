@@ -15,10 +15,12 @@
     scale: 1.02;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .style_button_select{
-
+        height: 7em;
         border-bottom: 1px solid var(--main-bg-color);
-
+        display: flex;
+        align-items: center;
+        justify-content: start;
     }
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import Techs from "../Techs/Techs";
 import Styles from "./techonologies.module.css";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 import {
   DiJsBadge,
   DiReact,
@@ -113,7 +115,12 @@ const Technologies = () => {
   ];
   return (
     
-    <div className={Styles.container_techs} id="technologies">
+    <motion.div 
+    variants={fadeIn("right", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{ once: false, amount: 0.2 }}
+    className={Styles.container_techs} id="technologies">
       <h2>Tecnologias</h2>
         <section className={Styles.techs}>
         <Techs techs={techs} about={"Lenguajes de programacion"} />
@@ -121,7 +128,7 @@ const Technologies = () => {
       <Techs techs={databases} about={"Bases de Datos"} />
       <Techs techs={others} about={"Otros"} />
         </section>
-    </div>
+    </motion.div>
   );
 };
 

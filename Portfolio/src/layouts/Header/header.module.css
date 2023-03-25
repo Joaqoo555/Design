@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: space-between;
         align-items: center;
-        min-width: 390px;
+        min-width: 360px;
         max-width: 600px;
     text-align: center;
 }
@@ -141,7 +141,7 @@ img {
     position: relative;
 }
 .surname{
-    padding-left: 2em;
+    padding-left: .6em;
 }
 .fullname {
     display: flex;

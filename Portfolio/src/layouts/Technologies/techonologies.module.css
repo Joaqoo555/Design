@@ -4,7 +4,7 @@
     align-items: center;
     padding-top: 4%;
     height: auto;
-    min-height: var(--heigth-content-sections);
+    min-height:var(--heigth-content-sections);
     width: 100%;
 
 }
@@ -16,4 +16,13 @@
     height: 40px;
     width: 40px;
 
+}
+
+@media (max-width: 500px) {
+    .container_techs{
+
+        padding-top: 2em;
+    
+    
+    }
 }

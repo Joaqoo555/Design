@@ -102,24 +102,7 @@ const Header = () => {
                 download={<CiImport className={Styles.download} />}
               ></Button>
             </motion.div>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.2 }}
-              className={Styles.container_icons}
-            >
-              <a href="https://github.com/Joaqoo555" target="_blank">
-                {" "}
-                <BsGithub className={Styles.icons} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/joaquin-ezequiel-carrera/"
-                target="_blank"
-              >
-                <BsLinkedin className={Styles.icons} />
-              </a>
-            </motion.div>
+
           </div>
         </motion.article>
       </main>

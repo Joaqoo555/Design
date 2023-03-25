@@ -11,15 +11,17 @@ const Nav = () => {
   return (
     <section className={Styles.nav_container}>
       <article className={Styles.container_icons}>
-        <Link to="header" spy={true} smooth={true} activeClass={Styles.active}>
+        <Link to="header" spy={true} smooth={"easeInOutQuart"} activeClass={Styles.active} isDynamic={true}>
           <GrHomeRounded className={Styles.icons} />
         </Link>
       </article>{" "}
       <article className={Styles.container_icons}>
         <Link
+        isDynamic={true}
           to="technologies"
           spy={true}
-          smooth={true}
+          smooth={"easeInOutQuart"}
+
           activeClass={Styles.active}
 
         >
@@ -28,16 +30,17 @@ const Nav = () => {
       </article>
       <article className={Styles.container_icons}>
         <Link
+        isDynamic={true}
           to="proyects"
           spy={true}
-          smooth={true}
+          smooth={"easeInOutQuart"}
           activeClass={Styles.active}
         >
           <BiUser className={Styles.icons} />
         </Link>
       </article>
       <article className={Styles.container_icons}>
-        <Link to="contact" spy={true} smooth={true} activeClass={Styles.active}>
+        <Link to="contact" spy={true} isDynamic={true} smooth={"easeInOutQuart"} activeClass={Styles.active}>
           <FaRegCommentDots className={Styles.icons} />
         </Link>
       </article>
