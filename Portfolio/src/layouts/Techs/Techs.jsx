@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import Styles from "./techs.module.css";
-import Technologie from "../../components/technologie/Technologie";
-
 
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 import Button_select from "../../components/Buttons/Button_select";
+import Technologie from "../../components/Technologie/Technologie";
 
 
 

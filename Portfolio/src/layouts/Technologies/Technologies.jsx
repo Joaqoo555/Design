@@ -26,7 +26,6 @@ import {
   SiHtml5,
   SiTailwindcss,
 } from "react-icons/si";
-import { color } from "framer-motion";
 const Technologies = () => {
   const techs = [
     {
