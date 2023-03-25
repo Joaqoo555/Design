@@ -4,7 +4,7 @@
     width: 90%;
     background-color: transparent;
     position: fixed;
-    bottom: 50%;
+    bottom: 25%;
     right: 3%;
     max-width: 50px;
     border-radius: 8px;
@@ -86,7 +86,7 @@
         height: 2rem;
         background-color: transparent;
         position: fixed;
-        bottom: 4%;
+        bottom: 2%;
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 500px;
@@ -100,14 +100,3 @@
     }
 }
 
-@media (max-height: 720px) {
-
-    .nav_container {
-        min-width: 4rem;
-        height: 400px;
-        top: 25%;
-        transition: .8s;
-        right: 0%;
-    }
-
-}
