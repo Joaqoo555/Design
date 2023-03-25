@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Styles from "./techs.module.css";
 import Technologie from "../../components/technologie/Technologie";
 
@@ -13,9 +13,10 @@ import Button_select from "../../components/Buttons/Button_select";
 const Techs = ({about, techs}) => {
   
   const [open, setOpen] = useState(true);
-  useEffect(() => {
+  const nodeRef = useRef(null);
+  useEffect(()=> {
     setOpen(false)
-  }, [])
+  },[])
   return (
     <article className={Styles.container_about}>
      
@@ -27,12 +28,14 @@ const Techs = ({about, techs}) => {
       />
 
 
+
       <CSSTransition
         classNames={"techs"}
         in={open}
         timeout={400}
+        nodeRef={nodeRef}
       >
-        <section className={Styles.container_techs}>
+        <section ref={nodeRef} className={Styles.container_techs}>
           {techs.map((t, id) => (
             <Technologie name={t.name} image={t.image} key={id} />
           ))}
