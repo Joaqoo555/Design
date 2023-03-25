@@ -14,3 +14,11 @@
     color: var(--first-bg-color);
     scale: 1.02;
 }
+
+@media (max-width: 500px) {
+    .style_button_select{
+
+        border-bottom: 1px solid var(--main-bg-color);
+
+    }
+}
