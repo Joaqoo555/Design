@@ -2,21 +2,17 @@ import React from "react";
 import Nav from "../../layouts/Nav/Nav";
 import Styles from "./home.module.css"
 import Header from "../../layouts/Header/Header";
-import About from "../../layouts/About/About";
+import Proyects from "../../layouts/Proyects/Proyects";
+import Contact from "../../layouts/Contact/Contact";
+import Technologies from "../../layouts/Technologies/Technologies";
 const Home = () => {
   return (
     <div className={Styles.container}>
-
       <Nav />
       <Header></Header>
-      <About></About>
-      <div>
-        <p>Joaquin Carrera</p>
-      </div>
-      <div>
-        <p>Joaquin Carrera</p>
-      </div>
-      
+      <Technologies></Technologies>
+      <Proyects></Proyects>
+      <Contact></Contact>
     </div>
   );
 };

@@ -3,9 +3,9 @@
 * {
   --first-bg-color: #f0f8fb;
   --main-bg-color: rgba(198, 10, 63, 0.678);
-  --main-bg_second-color:rgb(240, 46, 121, 0.4);
-  --main-bg_three-color:rgba(221, 37, 98, 0.3);
-  --main-bg_four-color:rgba(184, 17, 73, 0.2);
+  --main-bg_second-color: rgb(240, 46, 121, 0.4);
+  --main-bg_three-color: rgba(221, 37, 98, 0.3);
+  --main-bg_four-color: rgba(184, 17, 73, 0.2);
 
   --heigth-content-sections: 1080px;
   --main-fonts-color: rgba(198, 10, 63, 0.678);
@@ -13,7 +13,6 @@
   --three-fonts-color: rgba(0, 0, 0, 0.744);
   font-family: "Montserrat Alternates", sans-serif;
   color: var(--three-fonts-color);
-  
 }
 body {
   background-color: var(--first-bg-color);
@@ -39,6 +38,67 @@ button {
   background-color: var(--first-bg-color);
 }
 
+.techs-enter {
+  opacity: 0;
+  margin-left: -5000px;
+  animation: list .7s;
+
+}
+
+.techs-enter-active {
+  opacity: 1;
+  transition: .7s;
+  margin-left: 0;
+
+}
+.techs-enter-done {
+  opacity: 1;
+  margin-left: 0;
+  transition: .7s;
+  height: 23em;
+}
+
+.techs-exit {
+  opacity: 1;
+  margin-left: 0;
+  
+  animation: list_reverse .7s;
+}
+
+.techs-exit-active {
+  opacity: 0;
+  margin-left: -5000px;
+  transition: .7s;
+
+}
+.techs-exit-done {
+  margin-left: -5000px;
+  opacity: 0;
+  height: 0;
+
+}
+
+@keyframes list {
+  0% {
+    height: 0px;
+
+  }
+
+  100% {
+    height: 23em;
+  }
+}
+@keyframes list_reverse {
+  0% {
+    height: 23em;
+  }
+
+ 100%{
+    height: 0px;
+
+  }
+}
+
 @media (min-width: 1130px) {
   h1 {
     font-size: 34px;
@@ -48,7 +108,6 @@ button {
     line-height: 28px;
   }
   h3 {
-
   }
   p {
     font-size: 24px;
@@ -57,7 +116,6 @@ button {
   button {
     font-size: 20px;
   }
-
 }
 /*#c64c0a86*/
 /*rgba(198, 10, 63, 0.678)

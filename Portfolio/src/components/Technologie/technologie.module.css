@@ -1,0 +1,15 @@
+.tech {
+    padding: .2em;
+    margin: .4em 0;
+    width: 90px;
+    min-height: 70px;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tech:hover {
+    scale: 1.1;
+    cursor: pointer;
+}

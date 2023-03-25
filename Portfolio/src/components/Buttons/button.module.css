@@ -13,7 +13,7 @@
     border-right: 2px solid var(--main-bg-color);
     border-top: 2px solid white;
     border-left: 2px solid white;
-    transition-duration: 1s;
+    transition-duration: .3s;
     transition-property: border-top, 
        border-left, 
        border-bottom,
