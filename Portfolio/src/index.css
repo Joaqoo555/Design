@@ -6,8 +6,9 @@
   --main-bg_second-color: rgb(240, 46, 121, 0.4);
   --main-bg_three-color: rgba(221, 37, 98, 0.3);
   --main-bg_four-color: rgba(184, 17, 73, 0.2);
+  --blur-color: rgba(221, 37, 98, 0.931);
 
-  --heigth-content-sections: 1080px;
+  --heigth-content-sections: 100vh;
   --main-fonts-color: rgba(198, 10, 63, 0.678);
   --second-fonts-color: #c64c0a86;
   --three-fonts-color: rgba(0, 0, 0, 0.744);
@@ -108,6 +109,7 @@ button {
     line-height: 28px;
   }
   h3 {
+    font-size: 26px;
   }
   p {
     font-size: 24px;

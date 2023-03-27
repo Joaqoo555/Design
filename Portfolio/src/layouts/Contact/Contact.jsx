@@ -15,13 +15,17 @@ const Contact = () => {
       <h2>Contacto</h2>
       <article className={Styles.info}>
         <section className={Styles.maps}>
-          <iframe
+          <motion.iframe
+                    variants={fadeIn("right", 0.8)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.2 }}
             className={Styles.map}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49651.96786166442!2d-68.1504201136937!3d-38.94116260909734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33ba35eb8e35%3A0x6220acb810e3e2f5!2zTmV1cXXDqW4!5e0!3m2!1ses-419!2sar!4v1679769185591!5m2!1ses-419!2sar"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></motion.iframe>
         </section>{" "}
         <div className={Styles.container_info_aditional}>
         <section className={Styles.reds}>
