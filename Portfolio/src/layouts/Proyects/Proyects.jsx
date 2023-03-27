@@ -5,7 +5,7 @@ import {motion} from "framer-motion"
 import {fadeIn} from "../../variants.js"
 const Proyects = () => {
   return (
-    <motion.div 
+    <div 
     variants={fadeIn("left", 0.2)}
     initial="hidden"
     whileInView={"show"}
@@ -13,7 +13,7 @@ const Proyects = () => {
     id='proyects' className={Styles.container_proyects}>
       <h2>Proyectos</h2>
         <ProyectAbout tittle={"Unbardo Design"}></ProyectAbout>
-    </motion.div>
+    </div>
   )
 }
 

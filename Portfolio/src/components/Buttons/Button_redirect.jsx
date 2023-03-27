@@ -11,7 +11,7 @@ const Button_redirect = ({ text, url }) => {
     </a>
 
     </div>
-        <a href="https://github.com/Joaqoo555" target="_blank">
+        <a href="https://github.com/Proyect-PF/unBardo_design" target="_blank">
         {" "}
         <BsGithub className={Styles.icons} />
       </a>

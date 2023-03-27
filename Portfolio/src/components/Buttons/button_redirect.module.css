@@ -77,3 +77,10 @@ a {
     }
   }
   
+  @media (max-width: 768px) {
+    .style_button {
+        width: auto;
+        height: 20px;
+        font-size: 14px;
+    }
+}
