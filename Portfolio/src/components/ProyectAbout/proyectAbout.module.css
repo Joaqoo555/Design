@@ -4,10 +4,10 @@
   border-radius: none;
 }
 .container_about_proyect {
-  margin-top: 5%;
   border-radius: 8px;
   box-shadow: 0 0 8px 2px #33333328;
   margin: 2%;
+  margin-top: 25vh;
 }
 .container_img {
   width: 100%;
@@ -22,5 +22,7 @@
 @media (min-width: 1350px) {
   .container_about_proyect {
     width: 65vw;
+  margin-top: 10vh;
+
   }
 }
