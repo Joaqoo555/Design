@@ -21,7 +21,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: var(--heigth-content-sections);
+    height:100vh;
+    min-height: var(--heigth-content-sections);
 }
 .main {
     padding: 0;
