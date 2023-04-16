@@ -82,7 +82,7 @@ const Header = () => {
             </ul>
           </div>
           <p>
-            Soy desarrollador Full stack (Orientado al backend), con experiencia
+            Soy desarrollador Full stack M.E.R.N, con experiencia
             trabajando en Typescript, Javascript, React.JS, Express.JS, Node.JS,
             Tailwind, SQL entre otras tecnologías para la industria E-commerce.
             Busco crecer en el ámbito del desarrollo de software, aportando
