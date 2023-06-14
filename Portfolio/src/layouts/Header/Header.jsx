@@ -97,10 +97,7 @@ const Header = () => {
               viewport={{ once: false, amount: 0.2 }}
               className={Styles.container_buttons}
             >
-              <Button
-                about={"Contactame"}
-                download={<CiImport className={Styles.download} />}
-              ></Button>
+    
             </motion.div>
 
           </div>
