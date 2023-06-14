@@ -9,7 +9,7 @@ const ProyectAbout = ({tittle, img}) => {
        <div className={Styles.container_img}>
         <img src={unbardo} alt="Unbardo Design" className={Styles.img}/>
         <div className={Styles.hover_info}>
-       <Button_redirect text={"Unbardo Design"} url={"https://unbardo.com.ar/"}/>
+       <Button_redirect text={"Unbardo Design"} url={"https://un-bardo-design-neon.vercel.app/"}/>
         </div>
         </div>
 
