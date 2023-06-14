@@ -7,6 +7,11 @@ import { CiImport } from "react-icons/ci";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 const Header = () => {
+  const onRedirectToMyWpp = () => {
+    //redirect to my wpp when click the button
+    window.location.href = "https://wa.me/542994187714";
+  }
+
   return (
     <div className={Styles.container_header} id="header">
       <header className={Styles.header}>
@@ -45,7 +50,7 @@ const Header = () => {
             RERA
           </span>
         </h2>
-        <Button about="Trabaja conmigo" />
+        <Button about="Trabaja conmigo" onClick={onRedirectToMyWpp}/>
       </header>
       <main className={Styles.main}>
         <motion.picture
